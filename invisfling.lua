@@ -1,25 +1,25 @@
 local ch = speaker.Character
 local prt=Instance.new("Model")
 prt.Parent = speaker.Character
-local p1 = Instance.new("Part")
-p1.Name="Torso"
-p1.CanCollide = false
-p1.Anchored = true
-local p2 = Instance.new("Part")
-p2.Name="Head"
-p2.Parent = prt
-p2.Anchored = true
-p2.CanCollide = false
-local p3 =Instance.new("Humanoid")
-p3.Name="Humanoid"
-p3.Parent = prt
-p1.Position = Vector3.new(0,9999,0)
+local z1 = Instance.new("Part")
+z1.Name="Torso"
+z1.CanCollide = false
+z1.Anchored = true
+local z2 = Instance.new("Part")
+z2.Name="Head"
+z2.Parent = prt
+z2.Anchored = true
+z2.CanCollide = false
+local z3 =Instance.new("Humanoid")
+z3.Name="Humanoid"
+z3.Parent = prt
+z1.Position = Vector3.new(0,9999,0)
 speaker.Character=prt
 wait(3)
 speaker.Character=ch
 wait(3)
 local Hum = Instance.new("Humanoid")
-p2:Clone()
+z2:Clone()
 Hum.Parent = speaker.Character
 local root =  getRoot(speaker.Character)
 for i,v in pairs(speaker.Character:GetChildren()) do
