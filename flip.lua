@@ -1,11 +1,3 @@
-wait()
-
---[[ Info ]]--
-
-local ver = "2.00"
-local scriptname = "feFlip"
-
-
 --[[ Keybinds ]]--
 
 local FrontflipKey = Enum.KeyCode.Z
@@ -74,11 +66,3 @@ ca:BindAction("skidAirjump",skidAirjump,false,AirjumpKey)
 
 print(scriptname .. " " .. ver .. " loaded successfully")
 print("made by skid#7203")
-
-local notifSound = Instance.new("Sound",workspace)
-notifSound.PlaybackSpeed = 1.5
-notifSound.Volume = 0.15
-notifSound.SoundId = "rbxassetid://170765130"
-notifSound.PlayOnRemove = true
-notifSound:Destroy()
-game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
